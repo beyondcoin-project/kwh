@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="f6 ma3 tc">Balance</h1>
-      <div className="f5 tc dark-pink b">{summary.balance || '~'} satoshi</div>
+      <div className="f5 tc dark-pink b">{summary.balance || '~'} beyondtoshi</div>
       <h1 className="f6 ma3 tc">Latest transactions</h1>
       <div className="flex justify-center">
         <table className="f">

@@ -21,8 +21,7 @@ export const defs = [
     subtitle: (
       <>
         Set up a <a href="https://github.com/shesek/spark-wallet">Spark</a>{' '}
-        <a href="https://github.com/fiatjaf/sparko">RPC endpoint</a> server tied
-        to your c-lightning node.
+        server tied to your c-lightning node.
       </>
     ),
     fields: ['endpoint', 'username', 'password']
@@ -37,7 +36,7 @@ export const defs = [
         <a href="https://github.com/ACINQ/eclair#configuring-eclair">
           enable the API in the configuration
         </a>{' '}
-        so kWh can talk to it.
+        so kWh-BYND can talk to it.
       </>
     ),
     fields: ['endpoint', 'password']

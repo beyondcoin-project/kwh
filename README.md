@@ -5,8 +5,8 @@
 <p align="center">The companion browser extension for c-lightning, Eclair and Ptarmigan nodes.</p>
 
 <p align="center">
-  <a href="https://addons.mozilla.org/firefox/addon/kwh/"><img src="https://i.imgur.com/aNCB2LG.png" alt="Install for Firefox" width="215" style="max-width:100%;"></a>
-  <a href="https://chrome.google.com/webstore/detail/kwh/mbjlodgfcaknfbphnnfioilcnippdnjp"><img src="https://i.imgur.com/kWBQU9Q.png" alt="Install for Chrome" width="215" style="max-width:100%;"></a>
+  <a href="https://addons.mozilla.org/firefox/addon/kwh-bynd/"><img src="https://i.imgur.com/aNCB2LG.png" alt="Install for Firefox" width="215" style="max-width:100%;"></a>
+  <a href="https://chrome.google.com/webstore/detail/kwh-bynd/mbjlodgfcaknfbphnnfioilcnippdnjp"><img src="https://i.imgur.com/kWBQU9Q.png" alt="Install for Chrome" width="215" style="max-width:100%;"></a>
 </p>
 
 ## Features
@@ -28,8 +28,8 @@
 
 Either
 
-  * a [lightningd](https://github.com/ElementsProject/lightning/) node with a [Spark](https://github.com/shesek/spark-wallet) [RPC server](https://github.com/fiatjaf/sparko) in front of it;
-  * an [Eclair](https://github.com/ACINQ/eclair) node with the [API](https://github.com/ACINQ/eclair#configuring-eclair) enabled and accessible;
+  * a [lightningd](https://github.com/beyondcoin-project/lightning/) node with a [Spark](https://github.com/beyondcoin-project/spark-wallet) [RPC server](https://github.com/beyondcoin-project/sparko) in front of it;
+  * an [Eclair](https://github.com/beyondcoin-project/eclair) node with the [API](https://github.com/beyondcoin-project/eclair#configuring-eclair) enabled and accessible;
   * a [Ptarmigan](https://github.com/nayutaco/ptarmigan) node with the [REST API Node.js app](https://github.com/nayutaco/ptarmigan/blob/master/docs/howtouse_rest_api.md) running.
 
 ### Caveats
@@ -39,7 +39,7 @@ Either
 
 ## Build instructions
 
-You'll need: Node.js>=10, npm, Make
+You'll need: Node.js>=10, npm, Make, moreutils, zip and imagemagick
 
 ```
 npm install

@@ -63,7 +63,7 @@ export function summary() {
   })
 }
 
-export function pay(bolt11, msatoshi, description = 'unnamed kWh invoice') {
+export function pay(bolt11, msatoshi, description = 'unnamed kWh-BYND invoice') {
   if (!msatoshi) msatoshi = undefined
 
   return rpcCall('pay', {
@@ -91,7 +91,7 @@ export function decode(bolt11) {
 }
 
 export function makeInvoice(msatoshi = 'any', description, label = undefined) {
-  if (!label) label = `kWh.${cuid.slug()}`
+  if (!label) label = `kWh-BYND.${cuid.slug()}`
   return rpcCall('invoice', {
     msatoshi,
     label,
@@ -183,7 +183,7 @@ function rpcCall(method, params = []) {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
-        'X-Requested-With': 'kwh-extension',
+        'X-Requested-With': 'kwh-bynd-extension',
         'X-Access': makeAccessKey(username, password)
       },
       body: JSON.stringify({method, params})

@@ -1,16 +1,16 @@
 {
-  "id": "kwh",
+  "id": "kwh-bynd",
   "applications": {
     "gecko": {
-      "id": "kwh@alhur.es",
+      "id": "support@beyondcoin.io",
       "strict_min_version": "57.0"
     }
   },
   "manifest_version": 2,
-  "name": "kWh",
-  "description": "Send and receive Lightning payments in the browser with c-lightning, Eclair or Ptarmigan.",
+  "name": "kWh-bynd",
+  "description": "Send and receive Beyondcoin Lightning payments in the browser with c-lightning, Beyondcoin Eclair or Ptarmigan.",
   "version": "0.5.3",
-  "author": "fiatjaf",
+  "author": "beyondcoin developers",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
@@ -47,7 +47,7 @@
       "16": "icon16.png",
       "64": "icon64.png"
     },
-    "default_title": "KwH",
+    "default_title": "KwH-BYND",
     "default_popup": "popup.html"
   },
   "web_accessible_resources": [

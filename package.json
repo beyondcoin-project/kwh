@@ -1,5 +1,5 @@
 {
-  "name": "kwh",
+  "name": "kwh-bynd",
   "private": true,
   "license": "MIT",
   "browserify": {

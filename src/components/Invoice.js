@@ -17,9 +17,9 @@ export default function Invoice() {
   let amountFixed = !!action.amount
 
   let [invoiceData, setInvoiceData] = useState(action.invoiceData)
-  let [satoshis, setSatoshis] = useState(action.amount || defaultAmount)
+  let [beyondtoshis, setSatoshis] = useState(action.amount || defaultAmount)
   let [desc, setDesc] = useState(
-    action.defaultMemo || (action.origin ? action.origin.domain : `kWh invoice`)
+    action.defaultMemo || (action.origin ? action.origin.domain : `kWh-BYND invoice`)
   )
   let [invoicePaid, setInvoicePaid] = useState(false)
 
@@ -49,7 +49,7 @@ export default function Invoice() {
       .sendMessage({
         tab,
         rpc: {
-          makeInvoice: [satoshis * 1000, desc.replace(/&nbsp;/g, '').trim()]
+          makeInvoice: [beyondtoshis * 1000, desc.replace(/&nbsp;/g, '').trim()]
         },
         behaviors: {
           success: [
@@ -104,14 +104,14 @@ export default function Invoice() {
             ) : (
               <input
                 className={inputClasses + ' ml1 mr1 bn bg-transparent w3'}
-                value={satoshis}
+                value={beyondtoshis}
                 onChange={e => setSatoshis(e.target.value)}
                 step="10"
                 min={action.minimumAmount || 1}
                 max={action.maximumAmount || Infinity}
               />
             )}
-            satoshis described as{' '}
+            beyondtoshis described as{' '}
             <ContentEditable
               innerRef={contentEditable}
               html={desc}
